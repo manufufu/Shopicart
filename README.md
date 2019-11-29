@@ -1,0 +1,2 @@
+# Shopicart
+Shopify Minicart AJAX
