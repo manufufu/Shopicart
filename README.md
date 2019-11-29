@@ -52,7 +52,7 @@ Shopicart({
 | appendHere     | element      |   document.getElementById("tbody-mc") |
 | miniFunc     | function      |   toggleMiniCart |
 | miniTotal | element      |   document.querySelector("#mini-cart-total") |
-| itemTemplate | HTML text      | \`<p>Hello ${"${vendor}"}</p>\` |
+| itemTemplate | HTML text      | ``` `<p>Hello ${"${vendor}"}</p>` ``` |
 
 
 ### Parameter description.
