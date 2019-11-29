@@ -46,8 +46,8 @@ Shopicart({
 
 ### Shopicart parameters
 
-| Parameters    | Are           | Cool  |
+| Parameters    | Value           | Example  |
 | ------------- |:-------------:| -----:|
-| Form    | right-aligned | $1600 |
+| Form    | element | document.querySelectorAll(".lete-add-cart") |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
