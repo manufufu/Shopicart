@@ -91,40 +91,40 @@ itemTemplate should be of the same format in your theme file.
 #### Inside my Shopify theme's custom created minicart template
 
 ```
-                            {%- for line_item in cart.items -%}
-                            <tr class="product-cart-c mini-cart-tr line-{{ forloop.index }}" data-id="{{ line_item.variant_id }}">
-                                    <td class="cart-item-td cart-item-td--img">
-                                        <a href="{{- line_item.product.url -}}" class="product-image">
-                                            <img src="{{- line_item.product.featured_image | img_url: '200x300' -}}" alt="{{- line_item.product.featured_image.alt -}}">
-                                        </a>
-                                    </td>
-                                    <td class="cart-item-td cart-item-description">
-                                        <a href="{{- line_item.product.url -}}">
-                                            <h2 class="model">{{- line_item.product.vendor -}}</h2>
-                                            <h1 class="name">{{- line_item.product.title -}}</h1>
-                                        </a>
-                                        <br>
-                                        <p>Size: {{ line_item.variant.title }}</p>
-                                    </td>
-                                    <td class="cart-item-td cart-item-td--quantity">
-                                        <input type="number" name="updates[]" data-id="{{ line_item.variant_id }}" value="{{- line_item.quantity -}}" size="1" min="1" max="999" autocomplete="off" data-item-quantity>
-                                        <input type="submit" value="Update" class="update update-mn" role="button" data-a-index="{{ forloop.index | minus: 1}}">
-                                        <br>
-                                        <a href="/cart/change?line={{ forloop.index }}&quantity=0" class="remove" role="button">Remove</a>
-                                    </td>
-                                    <td class="cart-item-td cart-item-td--price">
-                                        <div class="cart-price">
-                                            {%- if line_item.quantity > 1 -%}
-                                            <p class="ck-item-price multi-mn" data-item-price>{{ line_item.product.price | money_with_currency }}
-                                                x {{ line_item.quantity }}</p>
-                                            {%- else -%}
-                                            <p class="ck-item-price multi-mn"></p>
-                                            {%- endif -%}
-                                            <div class="total-price item-mn" data-item-total>{{- line_item.line_price | money_with_currency -}}</div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            {%- endfor -%}
+{%- for line_item in cart.items -%}
+  <tr class="product-cart-c mini-cart-tr line-{{ forloop.index }}" data-id="{{ line_item.variant_id }}">
+     <td class="cart-item-td cart-item-td--img">
+       <a href="{{- line_item.product.url -}}" class="product-image">
+       <img src="{{- line_item.product.featured_image | img_url: '200x300' -}}" alt="{{- line_item.product.featured_image.alt -}}">
+       </a>
+     </td>
+    <td class="cart-item-td cart-item-description">
+       <a href="{{- line_item.product.url -}}">
+       <h2 class="model">{{- line_item.product.vendor -}}</h2>
+       <h1 class="name">{{- line_item.product.title -}}</h1>
+       </a>
+       <br>
+       <p>Size: {{ line_item.variant.title }}</p>
+    </td>
+    <td class="cart-item-td cart-item-td--quantity">
+       <input type="number" name="updates[]" data-id="{{ line_item.variant_id }}" value="{{- line_item.quantity -}}" size="1" min="1"   max="999" autocomplete="off" data-item-quantity>
+       <input type="submit" value="Update" class="update update-mn" role="button" data-a-index="{{ forloop.index | minus: 1}}">
+       <br>
+       <a href="/cart/change?line={{ forloop.index }}&quantity=0" class="remove" role="button">Remove</a>
+    </td>
+    <td class="cart-item-td cart-item-td--price">
+       <div class="cart-price">
+         {%- if line_item.quantity > 1 -%}
+           <p class="ck-item-price multi-mn" data-item-price>{{ line_item.product.price | money_with_currency }}
+           x {{ line_item.quantity }}</p>
+           {%- else -%}
+           <p class="ck-item-price multi-mn"></p>
+        {%- endif -%}
+       <div class="total-price item-mn" data-item-total>{{- line_item.line_price | money_with_currency -}}</div>
+    </div>
+  </td>
+ </tr>
+{%- endfor -%}
 ```
 
 
