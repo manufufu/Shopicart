@@ -83,6 +83,7 @@ Shopicart({
 2. **data-item-total** - Add data-item-total attribute to where you want to output the cart's total price.
 3. **data-item-quantity** - Add data-item-quantity attribute to where you want to ouput the item's quantity.
 4. **data-id** - Add data-id attribute with the value of variantId
+5. **data-item-discount** - Add data-item-discount attribute to where you want to output the item's discount
 
 ### itemTemplate description.
 
