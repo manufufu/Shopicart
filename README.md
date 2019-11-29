@@ -8,7 +8,8 @@
 ## Shopify Minicart AJAX
 
 
-```Shopicart({
+```
+Shopicart({
   form: document.querySelectorAll(".lete-add-cart"),
   appendHere: document.getElementById("tbody-mc"),
   miniTotal: document.querySelector("#mini-cart-total"),
@@ -40,4 +41,5 @@
       </div>
   </td>
 </tr>`
-});```
+});
+```
