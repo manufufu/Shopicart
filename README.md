@@ -51,4 +51,28 @@ Shopicart({
 | form    | element | document.querySelectorAll(".lete-add-cart") |
 | appendHere     | element      |   document.getElementById("tbody-mc") |
 | miniTotal | element      |   document.querySelector("#mini-cart-total") |
-| itemTemplate | HTML text      |   \`<p>Hello ${"${vendor}"}</p>\` |
+| itemTemplate | HTML text      | \`<p>Hello ${"${vendor}"}</p>\` |
+
+
+### Parameter description.
+
+1. form - Add items to cart form.
+2. appendHere - This is where itemTemplate will be appended.
+3. miniTotal - Total price of items in the mini-cart.
+4. itemTemplate - Only accepts backticks format HTML text.
+
+### Paramaters for itemTemplate.
+
+1. **variantId** - will be replaced by item's variant_id.
+2. **url** - will be replaced by item's URL.
+3. **image_url** - will be replaced item's featured_image.url.
+4. **image_alt** - will be replaced by item's featured_image.alt
+5. **vendor** - will be replaced by item's vendor.
+6. **title** - will be replaced by item's title.
+7. **variant_title** - will be replaced by item's variant_title.
+8. **quantity** - will be replaced by item's quantity.
+9. **line_price** - will be replaced by item's line_price.
+10. **discount** - will be replaced by item's discounted_price.
+11. **currency** - will be replaced by Shops current active currency format.
+
+
