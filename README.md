@@ -50,6 +50,7 @@ Shopicart({
 | ------------- |:-------------:| -----:|
 | form    | element | document.querySelectorAll(".lete-add-cart") |
 | appendHere     | element      |   document.getElementById("tbody-mc") |
+| miniFunc     | function      |   toggleMiniCart |
 | miniTotal | element      |   document.querySelector("#mini-cart-total") |
 | itemTemplate | HTML text      | \`<p>Hello ${"${vendor}"}</p>\` |
 
@@ -59,7 +60,8 @@ Shopicart({
 1. form - Add items to cart form.
 2. appendHere - This is where itemTemplate will be appended.
 3. miniTotal - Total price of items in the mini-cart.
-4. itemTemplate - Only accepts backticks format HTML text.
+4. miniFunc - Function that will run after the item is added in the minicart.
+5. itemTemplate - Only accepts backticks format HTML text.
 
 ### Paramaters for itemTemplate.
 
