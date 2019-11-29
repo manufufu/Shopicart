@@ -51,4 +51,4 @@ Shopicart({
 | form    | element | document.querySelectorAll(".lete-add-cart") |
 | appendHere     | element      |   document.getElementById("tbody-mc") |
 | miniTotal | element      |   document.querySelector("#mini-cart-total") |
-| itemTemplate | HTML text      |   \``<p>Hello ${"${vendor}"}</p>\`` |
+| itemTemplate | HTML text      |   \`<p>Hello ${"${vendor}"}</p>\` |
