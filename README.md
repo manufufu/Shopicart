@@ -55,7 +55,7 @@ Shopicart({
 | itemTemplate | HTML text      | ``` `<p>Hello ${"${vendor}"}</p>` ``` |
 
 
-### Parameter description.
+### Shopicart parameter's description.
 
 1. form - Add items to cart form.
 2. appendHere - This is where itemTemplate will be appended.
