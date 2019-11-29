@@ -57,11 +57,11 @@ Shopicart({
 
 ### Shopicart parameter's description.
 
-1. form - Add items to cart form.
-2. appendHere - This is where itemTemplate will be appended.
-3. miniTotal - Total price of items in the mini-cart.
-4. miniFunc - Function that will run after the item is added in the minicart.
-5. itemTemplate - Only accepts backticks format HTML text.
+1. **form** - Add items to cart form. ( Will listen to submit event on the form and will add items to minicart )
+2. **appendHere** - This is where itemTemplate will be appended.
+3. **miniTotal** - Total price of items in the mini-cart.
+4. **miniFunc** - Function that will run after the item is added in the minicart.
+5. **itemTemplate** - Only accepts backticks format HTML text.
 
 ### Paramaters for itemTemplate.
 
