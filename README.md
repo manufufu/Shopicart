@@ -5,4 +5,4 @@
 <script src="https:{{ 'api.jquery.js' | shopify_asset_url | remove: 'http:' | remove: 'https:'}}" defer="defer" crossorigin="anonymous"></script>
 ```
 
-Shopify Minicart AJAX
+## Shopify Minicart AJAX
