@@ -71,7 +71,7 @@ function Shopicart(settings = {
     elems.quantity.value = data.quantity;
     elems.totalprice.textContent = `${Shopify.formatMoney(data.line_price)} ${Shopify.currency.active}`;
     elems.total.textContent = `${Shopify.formatMoney(elems.getResponse.total_price)} ${Shopify.currency.active}`;
-    settings.miniFunc();
+    settings.miniFunc ? settings.miniFunc() : 0;
     }
 
     function addToMiniCart(data, response) {
@@ -92,7 +92,7 @@ function Shopicart(settings = {
         })
       );
       settings.miniTotal.textContent = `${Shopify.formatMoney(response.total_price)} ${Shopify.currency.active}`;
-      settings.miniFunc();
+      settings.miniFunc ? settings.miniFunc() : 0;
     }
 
 }
