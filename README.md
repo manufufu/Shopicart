@@ -110,7 +110,7 @@ itemTemplate should be of the same format in your theme file.
                                         <input type="number" name="updates[]" data-id="{{ line_item.variant_id }}" value="{{- line_item.quantity -}}" size="1" min="1" max="999" autocomplete="off" data-item-quantity>
                                         <input type="submit" value="Update" class="update update-mn" role="button" data-a-index="{{ forloop.index | minus: 1}}">
                                         <br>
-                                        <a href="/cart/change?line={{ forloop.index }}&quantity=0" data-id="{{ line_item.id }}" data-index="{{ forloop.index }}" class="remove" role="button">Remove</a>
+                                        <a href="/cart/change?line={{ forloop.index }}&quantity=0" class="remove" role="button">Remove</a>
                                     </td>
                                     <td class="cart-item-td cart-item-td--price">
                                         <div class="cart-price">
