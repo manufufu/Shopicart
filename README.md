@@ -77,7 +77,8 @@ Shopicart({
 10. **discount** - will be replaced by item's discounted_price.
 11. **currency** - will be replaced by Shops current active currency format.
 
-### itemTemplate data's
+### itemTemplate data's                      
+Used for updating minicart when the item is added _again_ to the cart.
 
 1. **data-item-price** - Add data-item-price attribute to where you want to output the item price.
 2. **data-item-total** - Add data-item-total attribute to where you want to output the cart's total price.
