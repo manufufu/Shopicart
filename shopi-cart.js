@@ -22,6 +22,7 @@ function Shopicart(settings = {
       }
 
       function ajaxAddjs(e){
+        e.preventDefault();
         let http = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
         let item = {
           quantity: 1,
@@ -117,7 +118,6 @@ function Shopicart(settings = {
   })();
 
 
-  let Minicart = new AJAXSingleton;
-
+  let Minicart = AJAXSingleton.getInstance();
    Minicart.forms();
 }
